@@ -1,5 +1,16 @@
+var _ = require('underscore');
+var Imagemin = require('imagemin');
+
 module.exports = function (file, options, cb) {
-  var source = file.buffer.toString();
-  if (source.indexOf(options.errorText) > -1) return cb(new Error('No good!'));
-  cb(null, {buffer: new Buffer('bar\n')});
+  var plugin = Imagemin[options.plugin];
+  if (!_.isFunction(plugin)) {
+    return cb(new Error("Unknown Imagemin plugin '" + options.plugin + "'"));
+  }
+  (new Imagemin())
+    .src(file.buffer)
+    .use(plugin(options.pluginOptions))
+    .run(function (er, files) {
+      if (er) return cb(er);
+      cb(null, {buffer: files[0].contents});
+    });
 };

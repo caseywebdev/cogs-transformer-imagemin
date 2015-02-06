@@ -4,7 +4,7 @@
       "transformers": {
         "name": ".",
         "options": {
-          "plugin": "svgo"
+          "plugin": "does-not-exist"
         }
       }
     }
