@@ -16,6 +16,6 @@
     "cogs-test-helper": "1.0.0"
   },
   "scripts": {
-    "test": "cogs-test-helper test/test.js -- -t 5000"
+    "test": "cogs-test-helper test/test.js"
   }
 }
