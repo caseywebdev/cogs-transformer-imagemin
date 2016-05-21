@@ -1,8 +1,9 @@
-# cogs-transformer-example
+# cogs-transformer-imagemin
 
-An example transformer for [Cogs].
+An [imagemin] transformer for [Cogs].
 
-[![Build Status]](http://travis-ci.org/caseywebdev/cogs-transformer-example)
+[![Build Status]](http://travis-ci.org/caseywebdev/cogs-transformer-imagemin)
 
+[imagemin]: https://github.com/imagemin/imagemin
 [Cogs]: https://github.com/caseywebdev/cogs
-[Build Status]: https://secure.travis-ci.org/caseywebdev/cogs-transformer-example.png
+[Build Status]: https://secure.travis-ci.org/caseywebdev/cogs-transformer-imagemin.png

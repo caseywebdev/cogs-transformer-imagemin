@@ -1,5 +1,9 @@
-module.exports = function (file, options, cb) {
-  var source = file.buffer.toString();
-  if (source.indexOf(options.errorText) > -1) return cb(new Error('No good!'));
-  cb(null, {buffer: new Buffer('bar\n')});
+const imagemin = require('imagemin');
+
+module.exports = ({buffer}, options, cb) => {
+  try {
+    imagemin.buffer(buffer, options)
+      .then(buffer => cb(null, {buffer}))
+      .catch(cb);
+  } catch (er) { cb(er); }
 };

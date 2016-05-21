@@ -1,0 +1,6 @@
+{
+  "pipe": {
+    "name": ".",
+    "options": {"plugins": ["bad-plugin-value"]}
+  }
+}
