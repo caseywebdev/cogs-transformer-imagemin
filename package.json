@@ -1,6 +1,6 @@
 {
   "name": "cogs-transformer-imagemin",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Casey Foster <c@sey.me>",
   "description": "An imagemine transformer for Cogs.",
   "license": "MIT",
@@ -9,7 +9,8 @@
     "url": "https://github.com/caseywebdev/cogs-transformer-imagemine"
   },
   "dependencies": {
-    "imagemin": "5"
+    "imagemin": "5",
+    "underscore": "1.8.3"
   },
   "devDependencies": {
     "cogs-test-helper": "2",

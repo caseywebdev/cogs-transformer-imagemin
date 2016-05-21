@@ -1,7 +1,7 @@
 var helper = require('cogs-test-helper');
 
 helper.run({
-  'test/config.js': {
+  'test/config.json': {
     'test/input.svg': {
       path: 'test/input.svg',
       buffer: helper.getFileBuffer('test/output.svg'),
