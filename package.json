@@ -1,5 +1,5 @@
 {
-  "name": "cogs-transformer-imagemine",
+  "name": "cogs-transformer-imagemin",
   "version": "2.0.0",
   "author": "Casey Foster <c@sey.me>",
   "description": "An imagemine transformer for Cogs.",
